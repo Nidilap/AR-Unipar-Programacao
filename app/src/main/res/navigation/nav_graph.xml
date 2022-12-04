@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.aplicacaoanotacao.fragments.AnotacoesFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/anotacoes_fragment">
+
+        <action
+            android:id="@+id/actionGoToCriarAnotacoes"
+            app:destination="@id/CriarAnotacoesFragment" />
+        <action
+            android:id="@+id/irSobre"
+            app:destination="@id/SobreActivity" />
+        <action
+            android:id="@+id/irMapa"
+            app:destination="@id/MapaActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/CriarAnotacoesFragment"
+        android:name="com.example.aplicacaoanotacao.fragments.CriarAnotacoesFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/criar_anotacoes_fragment">
+
+        <action
+            android:id="@+id/voltarAnotacoes"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/irSobre"
+            app:destination="@id/SobreActivity" />
+        <action
+            android:id="@+id/irMapa"
+            app:destination="@id/MapaActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/SobreActivity"
+        android:name="com.example.aplicacaoanotacao.fragments.SobreFragment"
+        android:label="@string/action_sobre"
+        tools:layout="@layout/sobre">
+        <action
+            android:id="@+id/irAnotacoes"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/irSobre"
+            app:destination="@id/SobreActivity" />
+        <action
+            android:id="@+id/irMapa"
+            app:destination="@id/MapaActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/MapaActivity"
+        android:name="com.example.aplicacaoanotacao.fragments.MapaFragment"
+        android:label="@string/action_mapa"
+        tools:layout="@layout/mapa">
+        <action
+            android:id="@+id/irAnotacoes"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/irSobre"
+            app:destination="@id/SobreActivity" />
+        <action
+            android:id="@+id/irMapa"
+            app:destination="@id/MapaActivity" />
+    </fragment>
+</navigation>

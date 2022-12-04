@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:flexDirection="column"
+    app:alignItems="center"
+    app:justifyContent="center"
+    android:paddingVertical="10dp"
+    android:paddingHorizontal="20dp"
+    tools:context=".activities.SobreActivity">
+
+    <TextView
+        android:id="@+id/sobre_oque"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/sobre_oque"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginVertical="10dp"
+        android:textSize="18sp"
+
+        />
+    <TextView
+        android:id="@+id/sobre_quem_fez"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/sobre_quem_fez"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginVertical="10dp"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/sobre_para_quem"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/sobre_para_quem"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginVertical="10dp"
+        android:textSize="12sp"/>
+</com.google.android.flexbox.FlexboxLayout>

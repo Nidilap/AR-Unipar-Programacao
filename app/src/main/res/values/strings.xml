@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">AplicacaoAnotacao</string>
+
+    <!-- Geral -->
+    <string name="criar">Criar</string>
+
+    <!-- Menus -->
+    <string name="action_anotacoes">Anotações</string>
+    <string name="action_sobre">Sobre</string>
+    <string name="action_mapa">Mapa</string>
+
+    <!-- Main Activity -->
+    <string name="first_fragment_label">Anotações</string>
+    <string name="second_fragment_label">Criar Anotação</string>
+    <string name="criar_anotacao">Criar Anotação</string>
+    <string name="previous">Voltar</string>
+
+    <string name="anotacao_titulo">Título da Anotação</string>
+    <string name="anotacao_descricao">Descrição da Anotação</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="next">Next</string>
+
+
+    <!-- Sobre -->
+    <string name="sobre_oque">Aplicativo de Anotações</string>
+    <string name="sobre_quem_fez">Feito por Mateus Andre - 09022909</string>
+    <string name="sobre_para_quem">Atividade Reflexiva - Programação de Dispositivos Móveis</string>
+</resources>
